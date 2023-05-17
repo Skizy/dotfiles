@@ -74,94 +74,424 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["coc.nvim"] = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/coc.nvim",
-    url = "https://github.com/neoclide/coc.nvim"
+  ["Comment.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
+  ["FluoroMachine.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/FluoroMachine.nvim",
+    url = "https://github.com/maxmx03/FluoroMachine.nvim"
+  },
+  ["awesome-vim-colorschemes"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/awesome-vim-colorschemes",
+    url = "https://github.com/rafi/awesome-vim-colorschemes"
+  },
+  ["bufferline.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
+  ["cmp-buffer"] = {
+    after_files = { "/home/skizy/.local/share/nvim/site/pack/packer/opt/cmp-buffer/after/plugin/cmp_buffer.lua" },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-nvim-lsp"] = {
+    after_files = { "/home/skizy/.local/share/nvim/site/pack/packer/opt/cmp-nvim-lsp/after/plugin/cmp_nvim_lsp.lua" },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    after_files = { "/home/skizy/.local/share/nvim/site/pack/packer/opt/cmp-path/after/plugin/cmp_path.lua" },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["cmp-vsnip"] = {
+    after_files = { "/home/skizy/.local/share/nvim/site/pack/packer/opt/cmp-vsnip/after/plugin/cmp_vsnip.lua" },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
+  },
+  ["crates.nvim"] = {
+    after_files = { "/home/skizy/.local/share/nvim/site/pack/packer/opt/crates.nvim/after/plugin/cmp_crates.lua" },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/crates.nvim",
+    url = "https://github.com/saecki/crates.nvim"
   },
   ["dart-vim-plugin"] = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/dart-vim-plugin",
+    loaded = false,
+    needs_bufread = true,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/dart-vim-plugin",
     url = "https://github.com/dart-lang/dart-vim-plugin"
   },
-  delimitMate = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/delimitMate",
-    url = "https://github.com/Raimondi/delimitMate"
+  ["dressing.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/dressing.nvim",
+    url = "https://github.com/stevearc/dressing.nvim"
+  },
+  ["flutter-tools.nvim"] = {
+    loaded = false,
+    needs_bufread = true,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/flutter-tools.nvim",
+    url = "https://github.com/akinsho/flutter-tools.nvim"
+  },
+  ["fold-preview.nvim"] = {
+    after = { "keymap-amend.nvim" },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/fold-preview.nvim",
+    url = "https://github.com/anuvyklack/fold-preview.nvim"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  harpoon = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
+  ["inc-rename.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/inc-rename.nvim",
+    url = "https://github.com/smjonas/inc-rename.nvim"
+  },
+  ["keymap-amend.nvim"] = {
+    load_after = {
+      ["fold-preview.nvim"] = true
+    },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/keymap-amend.nvim",
+    url = "https://github.com/anuvyklack/keymap-amend.nvim"
+  },
+  ["lsp-format.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/lsp-format.nvim",
+    url = "https://github.com/lukas-reineke/lsp-format.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["neodev.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
+  },
+  ["noice.nvim"] = {
+    after = { "nvim-notify", "nui.nvim" },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
+  ["nui.nvim"] = {
+    load_after = {
+      ["noice.nvim"] = true
+    },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
+  ["nvim-autopairs"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
+  ["nvim-cmp"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-dap"] = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/nvim-dap",
     url = "https://github.com/mfussenegger/nvim-dap"
   },
   ["nvim-dap-python"] = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/nvim-dap-python",
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/nvim-dap-python",
     url = "https://github.com/mfussenegger/nvim-dap-python"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-notify"] = {
+    load_after = {
+      ["noice.nvim"] = true
+    },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
+  ["nvim-parinfer"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/nvim-parinfer",
+    url = "https://github.com/gpanders/nvim-parinfer"
+  },
+  ["nvim-treesitter"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-treesitter-context"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/nvim-treesitter-context",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["oxocarbon.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/oxocarbon.nvim",
+    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/skizy/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["peek.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/peek.nvim",
+    url = "https://github.com/toppair/peek.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["pretty-fold.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/pretty-fold.nvim",
+    url = "https://github.com/anuvyklack/pretty-fold.nvim"
+  },
+  ["rainbow_csv.nvim"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\16rainbow_csv\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/rainbow_csv.nvim",
+    url = "https://github.com/cameron-wags/rainbow_csv.nvim"
+  },
+  ["rose-pine"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
+  },
+  ["rust-tools.nvim"] = {
+    loaded = false,
+    needs_bufread = true,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/rust-tools.nvim",
+    url = "https://github.com/simrat39/rust-tools.nvim"
+  },
+  ["startup.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/startup.nvim",
+    url = "https://github.com/startup-nvim/startup.nvim"
+  },
+  ["symbols-outline.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
+  },
   tagbar = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/tagbar",
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/tagbar",
     url = "https://github.com/preservim/tagbar"
   },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+  },
+  ["telescope-tabs"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/telescope-tabs",
+    url = "https://github.com/LukasPietzschmann/telescope-tabs"
+  },
+  ["telescope.nvim"] = {
+    loaded = false,
+    needs_bufread = true,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["todo-comments.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/todo-comments.nvim",
+    url = "https://github.com/folke/todo-comments.nvim"
+  },
   ["toggleterm.nvim"] = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
-  ["vim-airline"] = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/vim-airline",
-    url = "https://github.com/vim-airline/vim-airline"
+  ["trouble.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   },
-  ["vim-airline-themes"] = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
-    url = "https://github.com/vim-airline/vim-airline-themes"
+  ["twilight.nvim"] = {
+    config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rtwilight\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/twilight.nvim",
+    url = "https://github.com/folke/twilight.nvim"
   },
-  ["vim-commentary"] = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/vim-commentary",
-    url = "https://github.com/tpope/vim-commentary"
+  ["vim-be-good"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/vim-be-good",
+    url = "https://github.com/ThePrimeagen/vim-be-good"
   },
-  ["vim-css-color"] = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/vim-css-color",
-    url = "https://github.com/ap/vim-css-color"
+  ["vim-enfocado"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/vim-enfocado",
+    url = "https://github.com/wuelnerdotexe/vim-enfocado"
   },
-  ["vim-devicons"] = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/vim-devicons",
-    url = "https://github.com/ryanoasis/vim-devicons"
+  ["vim-fugitive"] = {
+    loaded = false,
+    needs_bufread = true,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
-  ["vim-flutter"] = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/vim-flutter",
-    url = "https://github.com/thosakwe/vim-flutter"
+  ["vim-vsnip"] = {
+    loaded = false,
+    needs_bufread = true,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/vim-surround",
-    url = "https://github.com/tpope/vim-surround"
+  ["yuck.vim"] = {
+    loaded = false,
+    needs_bufread = true,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/yuck.vim",
+    url = "https://github.com/elkowar/yuck.vim"
   },
-  ["vim-visual-multi"] = {
-    loaded = true,
-    path = "/home/skizy/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
-    url = "https://github.com/mg979/vim-visual-multi"
+  ["zen-mode.nvim"] = {
+    config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rzen-mode\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/skizy/.local/share/nvim/site/pack/packer/opt/zen-mode.nvim",
+    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+local module_lazy_loads = {
+  ["^rainbow_csv"] = "rainbow_csv.nvim",
+  ["^rainbow_csv%.fns"] = "rainbow_csv.nvim"
+}
+local lazy_load_called = {['packer.load'] = true}
+local function lazy_load_module(module_name)
+  local to_load = {}
+  if lazy_load_called[module_name] then return nil end
+  lazy_load_called[module_name] = true
+  for module_pat, plugin_name in pairs(module_lazy_loads) do
+    if not _G.packer_plugins[plugin_name].loaded and string.match(module_name, module_pat) then
+      to_load[#to_load + 1] = plugin_name
+    end
+  end
+
+  if #to_load > 0 then
+    require('packer.load')(to_load, {module = module_name}, _G.packer_plugins)
+    local loaded_mod = package.loaded[module_name]
+    if loaded_mod then
+      return function(modname) return loaded_mod end
+    end
+  end
+end
+
+if not vim.g.packer_custom_loader_enabled then
+  table.insert(package.loaders, 1, lazy_load_module)
+  vim.g.packer_custom_loader_enabled = true
+end
+
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Filetype lazy-loads
+time([[Defining lazy-load filetype autocommands]], true)
+vim.cmd [[au FileType rfc_semicolon ++once lua require("packer.load")({'rainbow_csv.nvim'}, { ft = "rfc_semicolon" }, _G.packer_plugins)]]
+vim.cmd [[au FileType csv ++once lua require("packer.load")({'rainbow_csv.nvim'}, { ft = "csv" }, _G.packer_plugins)]]
+vim.cmd [[au FileType csv_semicolon ++once lua require("packer.load")({'rainbow_csv.nvim'}, { ft = "csv_semicolon" }, _G.packer_plugins)]]
+vim.cmd [[au FileType csv_whitespace ++once lua require("packer.load")({'rainbow_csv.nvim'}, { ft = "csv_whitespace" }, _G.packer_plugins)]]
+vim.cmd [[au FileType csv_pipe ++once lua require("packer.load")({'rainbow_csv.nvim'}, { ft = "csv_pipe" }, _G.packer_plugins)]]
+vim.cmd [[au FileType rfc_csv ++once lua require("packer.load")({'rainbow_csv.nvim'}, { ft = "rfc_csv" }, _G.packer_plugins)]]
+vim.cmd [[au FileType tsv ++once lua require("packer.load")({'rainbow_csv.nvim'}, { ft = "tsv" }, _G.packer_plugins)]]
+time([[Defining lazy-load filetype autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
